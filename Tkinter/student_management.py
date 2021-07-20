@@ -1,0 +1,23 @@
+from tkinter import *
+root=Tk()
+root.geometry('1044x244')
+root.minsize(844,344)
+root.title('Netaji Subhash Engineering College')
+#Header Position
+p1 = PhotoImage(file = 'NSEC_Logo.png')
+root.iconphoto(False, p1)
+f1=Frame(root,background="white",borderwidth=6,relief=GROOVE)
+f1.pack(fill=X)
+photo1=PhotoImage(file="NSEC_Logo.png")
+l1=Label(f1,image=photo1,bg="white")
+l1.pack(side=LEFT)
+l2=Label(f1,text="NSEC Management System",fg='#9e363a',background="white",font='comicsansms 40 bold')
+l2.pack()
+canvas=Canvas(f1,width=800,height=4,bg="white",highlightbackground="white")
+canvas.pack()
+canvas.create_line(55,2,750,2,fill='#9e363a',width=3)
+canvas.pack()
+l3=Label(f1,text='''Approved by AICTE, Affiliated to MAKAUT, Accredited by NBA (Programmes) and NAAC (Institute) & Ranked by NIRF & ARIIA''',fg="#9e363a",bg="white")
+l3.pack()
+#Body part
+root.mainloop()
