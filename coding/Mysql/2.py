@@ -1,0 +1,16 @@
+import numpy as np
+a=[11,22,33,44,55,66,77,2,4,5,68,9]
+k=np.array(a)
+print(k)
+print("Data type of the var k",type(k))
+print("Dimension of array is",k.ndim)
+print("Shape is",k.shape)
+print("the total number of elements in this numpy",len(k))
+k2=k.reshape(6,2)
+print("after reshape the new array is",k2)
+print("the shape of the array is",k2.shape)
+print("the Dimension of the array is",k2.ndim)
+k3=k.reshape(6,2,1)
+print("the new array is",k3)
+print("the shape of the array is",k3.shape)
+print("the Dimension of the array is",k3.ndim)
